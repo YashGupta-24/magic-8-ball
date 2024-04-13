@@ -3,9 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/85b90bcf74.js" crossorigin="anonymous"></script>
     <title>Magic-8-ball</title>
 </head>
 <body>
-    
+    <section class="text-gray-600 body-font bg-emerald-200 h-screen">
+        <div class="container mx-auto flex px-5 py-5 items-center justify-center flex-col">
+          <div class=" w-96 h-96 mb-10 rounded-full flex justify-center items-center bg-stone-900 cursor-pointer hover:scale-105 duration-1000">
+            <div class="w-44 h-44 rounded-full output flex justify-center items-center bg-white">8-Ball</div>
+          </div>
+          <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Welcome to the realm of mystical wisdom!</h1>
+            <p class="mb-8 leading-relaxed"> Dip your digital toe into the cosmic waters of 8-Pool and let fate's currents guide your path.</p>
+            <div class="flex flex-col justify-center items-center">
+                <input type="text" name="question" id="inputQuestion" placeholder="Enter your question" class="border-2 rounded-3xl border-black p-2 mb-4 w-11/12 text-center text-white">
+                <button class=" text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg w-40 flex items-center justify-between">Search
+                    <i class="fa-solid fa-magnifying-glass fa-lg" style="color: #fcfcfc;"></i>
+                </button>
+            </div>
+          </div>
+        </div>
+      </section>
 </body>
 </html>
